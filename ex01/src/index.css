@@ -1,0 +1,79 @@
+html, body{
+    height: 100%;
+    background-color: rgb(211, 211, 211);
+    font-family: 'Roboto', sans-serif;
+    margin: 20px auto;
+    text-align: center;
+}
+textarea{
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+
+}
+.clicked {
+    color: red; 
+}
+
+.keyboard{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    user-select: none;
+    margin: 0;
+    /* transition: bottom 0.5s; */
+}
+
+
+.keyboard-btns {
+    text-align: center;
+    font-size: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: black;
+}
+
+
+/* Buttons in keyboard */
+.btn{
+    /* width: calc(100% / 12); */
+    margin: 0;
+    outline: none;
+    border: 1px solid (255, 255, 255, 0);
+    /* height: calc(var(width)*0.7); */
+    height: 45px;
+    vertical-align: top;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.btn:active {
+    background: rgba(255, 255, 255, 0.15);
+    border: 3px solid white;
+}
+
+
+
+.special-back{
+    /* width: calc(100% / 12 * 2); */
+    grid-column: span 2;
+}
+.special-enter{
+    grid-column: span 2;
+}
+
+.special-caps {
+    grid-column: span 3;
+}
+.special-shift {
+    grid-column: span 3;
+}
+
+.special-submit {
+    grid-column: span 3;
+}
+.special-space {
+    grid-column: span 9;
+}
